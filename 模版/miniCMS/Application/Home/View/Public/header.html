@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html style="overflow-y:hidden;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <LINK rel="Bookmark" href="/favicon.ico">
+    <LINK rel="Shortcut Icon" href="/favicon.ico" />
+    <!--[if lt IE 9]>
+<script type="text/javascript" src="[!JS]html5.js"></script>
+<script type="text/javascript" src="[!JS]respond.min.js"></script>
+<script type="text/javascript" src="[!JS]PIE_IE678.js"></script>
+<![endif]-->
+    <link href="[!CSS]H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="[!CSS]H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="[!FONT]font-awesome.min.css" />
+    <!--[if IE 7]>
+<link href="[!FONT]font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+    <!--[if IE 6]>
+<script type="text/javascript" src="[!JS]DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+    <title>实用的cms企业后台管理模板html下载_js代码</title>
+    <meta name="keywords" content="企业后台管理系统,企业后台模板,cms后台管理系统,cms网站管理系统,cms后台模板,cms管理系统模板" />
+    <meta name="description" content="实用的cms企业后台管理模板html下载。" />
+</head>
+
+<body style="overflow:hidden">
+    <header class="Hui-header cl"> <a class="Hui-logo l" title="H-ui.admin v2.1" href="/">H-ui.admin</a>  <a class="Hui-logo-m l" href="/" title="H-ui.admin">H-ui</a>  <span class="Hui-subtitle l">V2.1</span>  <span class="Hui-userbox"><span class="c-white">超级管理员：admin</span>  <a class="btn btn-danger radius ml-10"
+        href="#" title="退出"><i class="icon-off"></i> 退出</a>
+        </span>
+        <a aria-hidden="false" class="Hui-nav-toggle" id="nav-toggle" href="#"></a>
+    </header>
+    <div class="cl Hui-main">
+        <aside class="Hui-aside" style="">
+            <input runat="server" id="divScrollValue" type="hidden" value="" />
+            <div class="menu_dropdown bk_2">
+                <dl id="menu-user"> <dt><i class="icon-user"></i> 用户中心<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="{:U('User/userList')}" href="javascript:;">用户列表</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-comments"> <dt><i class="icon-comments"></i> 评论管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:;">评论列表</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">意见反馈</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-article"> <dt><i class="icon-edit"></i> 资讯管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="article-class.html" href="javascript:void(0)">分类管理</a>
+                            </li>
+                            <li><a _href="article-list.html" href="javascript:void(0)">资讯管理</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-picture"> <dt><i class="icon-picture"></i> 图片库<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:void(0)">分类管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">图片管理</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-product"> <dt><i class="icon-beaker"></i> 产品库<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:void(0)">品牌管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">分类管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">产品管理</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-page"> <dt><i class="icon-paste"></i> 页面管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:void(0)">首页管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">友情链接</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-order"> <dt><i class="icon-credit-card"></i> 财务管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:void(0)">订单列表</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">充值管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">发票管理</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-tongji"> <dt><i class="icon-bar-chart"></i> 系统统计<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="{:U('Log/recordList')}" href="javascript:void(0)">日志管理</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-admin"> <dt><i class="icon-key"></i> 管理员管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="" href="javascript:void(0)">角色管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">权限管理</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">管理员列表</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl id="menu-system"> <dt><i class="icon-cogs"></i> 系统管理<b></b></dt>
+                    <dd>
+                        <ul>
+                            <li><a _href="{:U('System/baseSetting')}" href="javascript:void(0)">基本设置</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">栏目设置</a>
+                            </li>
+                            <li><a _href="" href="javascript:void(0)">数据字典</a>
+                            </li>
+                            <li><a _href="{:U('System/filter')}" href="javascript:void(0)">屏蔽词</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </aside>
+        <div class="dislpayArrow">
+            <a class="pngfix" href="javascript:void(0);"></a>
+        </div>

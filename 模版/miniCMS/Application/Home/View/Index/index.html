@@ -1,0 +1,22 @@
+<include file="Public:header" />
+<!-- 加载头部End -->
+<section class="Hui-article">
+    <div id="Hui-tabNav" class="Hui-tabNav">
+        <div class="Hui-tabNav-wp">
+            <ul id="min_title_list" class="acrossTab cl">
+                <li class="active"><span title="系统主页" data-href="{:U('Index/main')}">系统主页</span><em></em>
+                </li>
+            </ul>
+        </div>
+        <div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default btn-small" href="javascript:;"><i class="icon-step-backward"></i></a><a id="js-tabNav-next" class="btn radius btn-default btn-small" href="javascript:;"><i class="icon-step-forward"></i></a>
+        </div>
+    </div>
+    <div id="iframe_box" class="Hui-articlebox">
+        <div class="show_iframe">
+            <div style="display:none" class="loading"></div>
+            <iframe scrolling="yes" frameborder="0" src="{:U('Index/main')}"></iframe>
+        </div>
+    </div>
+</section>
+<!-- 加载尾部 -->
+<include file="Public:footer" />
