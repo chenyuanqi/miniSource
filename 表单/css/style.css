@@ -1,0 +1,336 @@
+/*
+
+Multipurpose Forms - CSS3
+
+Author: RikyBlue
+Date: March 2015
+Version: 1.0
+
+-----------------------
+| [Table of Contents] |
+-----------------------
+
+1. Main Style
+2. Panel
+3. Buttons
+4. Inputs
+5. Alerts
+6. Checkbox & Radio
+
+*/
+
+@import url(../../../../fonts.googleapis.com/css¿family=PT+Sans.css);
+
+/* Main Style */
+
+.mpf_wrapper .form-group a {
+	color: #008EFF;
+}
+
+.mpf_wrapper .form-group a:hover {
+	color: #0056F4;
+	text-decoration: none;
+}
+
+.mpf_wrapper .form-group label {
+	font-size: 16px;
+}
+
+.mpf_wrapper .form-control {
+	font-weight: normal;
+	border: 1px solid #ddd;
+	-webkit-border-radius:	0 !important;
+	-moz-border-radius:		0 !important;
+	border-radius:			0 !important;
+	-webkit-box-shadow:		none !important;
+	-moz-box-shadow:		none !important;
+	-o-shadow: 				none !important;
+	box-shadow:				none !important;
+	outline: none;
+}
+
+.mpf_wrapper select.form-control {
+	-webkit-appearance: none;
+}
+
+.mpf_wrapper .form-control:focus {
+	border-color: #008EFF;
+}
+
+.mpf_wrapper .form-horizontal .control-label {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+}
+
+.mpf_wrapper .red {
+	color: #FF0000;
+}
+
+/* Panel */
+
+.mpf_wrapper .panel.panel-form {
+	margin-top: 50px;
+	border: 3px solid #E6E6E6;
+	box-shadow: 1px 1px 10px #E6E6E6;
+}
+
+.mpf_wrapper .panel.panel-form,
+.mpf_wrapper .panel.panel-form .panel-heading,
+.mpf_wrapper .panel.panel-form .panel-footer {
+	border-radius: 0;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading {
+	text-align: center;
+	border-bottom: 3px solid #E6E6E6;
+	color: #EEE;
+	background: #008EFF;
+	padding: 20px;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading a:hover {
+	text-decoration: none;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading p {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading .title {
+	position: relative;
+	margin: 0 0 20px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading .title:before {
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	left: 50%;
+	width: 40px;
+	height: 0;
+	margin-left: -20px;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.mpf_wrapper .panel.panel-form .panel-body {
+	padding: 50px;
+	background: #FAFAFF;
+}
+
+/* Buttons */
+
+.mpf_wrapper .mpf_btn {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: none;
+	padding: 10px 25px;
+	background: #008EFF;
+}
+
+.mpf_wrapper .mpf_btn:hover, .mpf_wrapper .mpf_btn:focus, .mpf_wrapper .mpf_btn:active {
+	-webkit-box-shadow:	none !important;
+	-moz-box-shadow:	none !important;
+	-o-shadow: 			none !important;
+	box-shadow:			none !important;
+	outline: none;
+	text-decoration: none;
+	background: #0056F4;
+	-webkit-transition: background 0.2s ease-in-out 0.1s;
+	-moz-transition: background 0.2s ease-in-out 0.1s;
+    -o-transition: background 0.2s ease-in-out 0.1s;
+    -ms-transition: background 0.2s ease-in-out 0.1s;
+	transition: background 0.2s ease-in-out 0.1s;
+}
+
+.mpf_wrapper .btn-red {
+	background: #FF0000;
+}
+
+.mpf_wrapper .btn-red:hover, .mpf_wrapper .btn-red:focus, .mpf_wrapper .btn-red:active {
+	background: #DE0000;
+}
+
+.mpf_wrapper .btn-green {
+	background: #54CC14;
+}
+
+.mpf_wrapper .btn-green:hover, .mpf_wrapper .btn-green:focus, .mpf_wrapper .btn-green:active {
+	background: #409C0F;
+}
+
+.mpf_wrapper .btn-purple {
+	background: #80369C;
+}
+
+.mpf_wrapper .btn-purple:hover, .mpf_wrapper .btn-purple:focus, .mpf_wrapper .btn-purple:active {
+	background: #3B1569;
+}
+
+.mpf_wrapper .btn-orange {
+	background: #F58800;
+}
+
+.mpf_wrapper .btn-orange:hover, .mpf_wrapper .btn-orange:focus, .mpf_wrapper .btn-orange:active {
+	background: #B86600;
+}
+
+/* Inputs */
+
+.mpf_wrapper input.success {
+	border: 2px solid #54CC14;
+}
+
+.mpf_wrapper input.warning {
+	border: 2px solid #FFC200;
+}
+
+.mpf_wrapper input.error {
+	border: 2px solid #FF0000;
+}
+
+.mpf_wrapper input.success:focus {
+	border: 2px solid #54CC14;
+	opacity: 0.7;
+}
+
+.mpf_wrapper input.warning:focus {
+	border: 2px solid #FFC200;
+	opacity: 0.7;
+}
+
+.mpf_wrapper input.error:focus {
+	border: 2px solid #FF0000;
+	opacity: 0.7;
+}
+
+/* Alerts */
+
+.mpf_wrapper .alert {
+	-webkit-border-radius:	0 !important;
+	-moz-border-radius:		0 !important;
+	border-radius:			0 !important;
+}
+
+.mpf_wrapper .alert-success {
+	border: 2px solid #54CC14;
+}
+
+.mpf_wrapper .alert-info {
+	border: 2px solid #008EFF;
+}
+
+.mpf_wrapper .alert-warning {
+	border: 2px solid #FFC200;
+}
+
+.mpf_wrapper .alert-danger {
+	border: 2px solid #FF0000;
+}
+
+.mpf_wrapper .alert-special {
+	border: 2px solid #80369C;
+	background-color: #D2D2FF;
+}
+
+/* Checkbox & Radio */
+
+.mpf_wrapper .radio-inline,
+.mpf_wrapper .checkbox-inline {
+	padding: 0;
+}
+
+.mpf_wrapper .form-group label.option {
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	left: -20px;
+	vertical-align: top;
+}
+
+.mpf_wrapper .form-group label.option + label {
+	padding: 0 10px;
+	margin-left: -20px;
+	margin-right: 20px;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"],
+.mpf_wrapper .form-group label.option input[type="radio"],
+.mpf_wrapper .form-group label.option .button-checkbox,
+.mpf_wrapper .form-group label.option .button-radio {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"],
+.mpf_wrapper .form-group label.option input[type="radio"] {
+	margin: 0;
+	opacity: 0;
+}
+
+.mpf_wrapper .form-group label.option .button-checkbox,
+.mpf_wrapper .form-group label.option .button-radio {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"]:checked + .button-checkbox,
+.mpf_wrapper .form-group label.option input[type="radio"]:checked + .button-radio {
+	border-color: #008EFF;;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"]:checked + .button-checkbox:after {
+	text-align: center;
+	content: '\2713';
+	color: #008EFF;
+	z-index: 2;
+}
+
+.mpf_wrapper .form-group label.option input[type="radio"] + .button-radio:after {
+	position: absolute;
+	content: '';
+	z-index: 2;
+}
+	
+.mpf_wrapper .form-group label.option .button-radio,
+.mpf_wrapper .form-group label.option .button-radio:after {
+	-webkit-border-radius:	10px;
+	-moz-border-radius:		10px;
+	border-radius:			10px;
+}
+
+.mpf_wrapper .form-group label.option.button input[type="checkbox"] + .button-checkbox:after {
+	display: none;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.mpf_wrapper .form-group label.option.button input[type="radio"] + .button-radio:after {
+	display: none;
+	top: 4px;
+	bottom: 4px;
+	left: 4px;
+	width: 10px;
+	background: #008EFF;
+}
+
+.mpf_wrapper .form-group label.option.button input[type="checkbox"]:checked + .button-checkbox:after,
+.mpf_wrapper .form-group label.option.button input[type="radio"]:checked + .button-radio:after {
+	display: block;
+}

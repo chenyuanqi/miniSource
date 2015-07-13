@@ -1,0 +1,76 @@
+.mpf_wrapper .form-group a {
+	color: #54CC14;
+}
+
+.mpf_wrapper .form-group a:hover {
+	color: #409C0F;
+}
+
+.mpf_wrapper .form-control:focus {
+	border-color: #54CC14;
+}
+
+.mpf_wrapper .panel.panel-form .panel-heading {
+	background: #54CC14;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"]:checked + .button-checkbox,
+.mpf_wrapper .form-group label.option input[type="radio"]:checked + .button-radio {
+	border-color: #54CC14;
+}
+
+.mpf_wrapper .form-group label.option input[type="checkbox"]:checked + .button-checkbox:after {
+	color: #54CC14;
+}
+
+.mpf_wrapper .form-group label.option.button input[type="radio"] + .button-radio:after {
+	background: #54CC14;
+}
+
+.mpf_wrapper .mpf_btn {
+	background: #54CC14;
+}
+
+.mpf_wrapper .mpf_btn:hover, .mpf_wrapper .mpf_btn:focus, .mpf_wrapper .mpf_btn:active {
+	background: #409C0F;
+}
+
+.mpf_wrapper .btn-blue {
+	background: #008EFF;
+}
+
+.mpf_wrapper .btn-blue:hover, .mpf_wrapper .btn-blue:focus, .mpf_wrapper .btn-blue:active {
+	background: #0056F4;
+}
+
+.mpf_wrapper .btn-red {
+	background: #FF0000;
+}
+
+.mpf_wrapper .btn-red:hover, .mpf_wrapper .btn-red:focus, .mpf_wrapper .btn-red:active {
+	background: #DE0000;
+}
+
+.mpf_wrapper .btn-green {
+	background: #54CC14;
+}
+
+.mpf_wrapper .btn-green:hover, .mpf_wrapper .btn-green:focus, .mpf_wrapper .btn-green:active {
+	background: #409C0F;
+}
+
+.mpf_wrapper .btn-purple {
+	background: #80369C;
+}
+
+.mpf_wrapper .btn-purple:hover, .mpf_wrapper .btn-purple:focus, .mpf_wrapper .btn-purple:active {
+	background: #3B1569;
+}
+
+.mpf_wrapper .btn-orange {
+	background: #F58800;
+}
+
+.mpf_wrapper .btn-orange:hover, .mpf_wrapper .btn-orange:focus, .mpf_wrapper .btn-orange:active {
+	background: #B86600;
+}

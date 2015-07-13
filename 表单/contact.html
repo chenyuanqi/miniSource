@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="多用途表单插件 - CSS3">
+    <meta name="author" content="RikyBlue">
+    <title>Contact</title>
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="alternate stylesheet" href="./css/red.css" title="red">
+    <link type="text/css" rel="alternate stylesheet" href="./css/green.css" title="green">
+    <link type="text/css" rel="alternate stylesheet" href="./css/purple.css" title="purple">
+    <link type="text/css" rel="alternate stylesheet" href="./css/orange.css" title="orange">
+    <!-- DEMO STYLE - NOT REQUIRED -->
+    <link type="text/css" rel="stylesheet" href="./css/demo.css">
+    <!-- COLOR SWITCHER -->
+    <script type="text/javascript" src="./js/styleswitcher.js"></script>
+</head>
+
+<body>
+    <div class="mpf_wrapper container">
+        <!-- CONTACT FORM -->
+        <div class="row">
+            <div class="col-md-12 text-center margin-top">	<a class="mpf_btn btn-primary btn-blue" href="" onclick="setActiveStyleSheet(&#39;blue&#39;); return false;">蓝色</a>
+                <a class="mpf_btn btn-primary btn-red" href="" onclick="setActiveStyleSheet(&#39;red&#39;); return false;">红色</a>
+                <a class="mpf_btn btn-primary btn-green" href="" onclick="setActiveStyleSheet(&#39;green&#39;); return false;">绿色</a>
+                <a class="mpf_btn btn-primary btn-purple" href="" onclick="setActiveStyleSheet(&#39;purple&#39;); return false;">紫色</a>
+                <a class="mpf_btn btn-primary btn-orange" href="" onclick="setActiveStyleSheet(&#39;orange&#39;); return false;">橙色</a>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-form">
+                    <div class="panel-heading">
+                        <h2 class="title">联系</h2>
+                        <p>联系我们.</p>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="row text-center">	<i class="fa fa-2x fa-building"></i>
+                            </div>
+                            <div class="row text-center">
+                                <h3>公司名称</h3>
+                                <br>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <h4><strong><i class="fa fa-map-marker"></i> 地址</strong></h4>
+                                    <p>1, 地址, 国家</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4><strong><i class="fa fa-envelope"></i> Email</strong></h4>
+                                    <p>info@email.com</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4><strong><i class="fa fa-phone"></i> 手机号码</strong></h4>
+                                    <p>+123 3456789</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label class="control-label">名字</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">标题</label>
+                                <input type="text" class="form-control" id="object">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">消息</label>
+                                <textarea class="form-control" id="message" rows="10"></textarea>
+                            </div>
+                            <div class="form-group margin-top">
+                                <button type="button" class="mpf_btn btn-lg btn-primary">发送消息</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

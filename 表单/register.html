@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/4/21/e0ab6486229841f4dd07bc2288e1431f/registration.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="多用途表单插件 - CSS3">
+    <meta name="author" content="RikyBlue">
+    <title>Register</title>
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="alternate stylesheet" href="./css/red.css" title="red">
+    <link type="text/css" rel="alternate stylesheet" href="./css/green.css" title="green">
+    <link type="text/css" rel="alternate stylesheet" href="./css/purple.css" title="purple">
+    <link type="text/css" rel="alternate stylesheet" href="./css/orange.css" title="orange">
+    <!-- DEMO STYLE - NOT REQUIRED -->
+    <link type="text/css" rel="stylesheet" href="./css/demo.css">
+    <!-- COLOR SWITCHER -->
+    <script type="text/javascript" src="./js/styleswitcher.js"></script>
+</head>
+
+<body>
+    <div class="mpf_wrapper container">
+        <!-- REGISTRATION FORM -->
+        <div class="row">
+            <div class="col-md-12 text-center margin-top">	<a class="mpf_btn btn-primary btn-blue" href="" onclick="setActiveStyleSheet(&#39;blue&#39;); return false;">蓝色</a>
+                <a class="mpf_btn btn-primary btn-red" href="" onclick="setActiveStyleSheet(&#39;red&#39;); return false;">红色</a>
+                <a class="mpf_btn btn-primary btn-green" href="" onclick="setActiveStyleSheet(&#39;green&#39;); return false;">绿色</a>
+                <a class="mpf_btn btn-primary btn-purple" href="" onclick="setActiveStyleSheet(&#39;purple&#39;); return false;">紫色</a>
+                <a class="mpf_btn btn-primary btn-orange" href="" onclick="setActiveStyleSheet(&#39;orange&#39;); return false;">橙色</a>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-form">
+                    <div class="panel-heading">
+                        <h2 class="title">注册</h2>
+                        <p>已经有账号了？ <a href="">登陆</a>.</p>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="control-label"><i class="fa fa-user"></i> 用户名</label> <span class="red">*</span>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label"><i class="fa fa-envelope"></i> Email</label> <span class="red">*</span>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><i class="fa fa-lock"></i> 密码</label> <span class="red">*</span>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"><i class="fa fa-lock"></i> 重复密码</label> <span class="red">*</span>
+                                        <input type="password" class="form-control" id="password2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">名称</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">昵称</label>
+                                        <input type="text" class="form-control" id="surname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">性别</label>
+                                        <div class="radio">
+                                            <label class="option button">
+                                                <input type="radio" name="gender" value="male">	<span class="button-radio"></span>
+                                            </label>
+                                            <label>男</label>
+                                            <label class="option button">
+                                                <input type="radio" name="gender" value="female">	<span class="button-radio"></span>
+                                            </label>
+                                            <label>女</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">生气</label>
+                                        <select class="form-control" id="birth">
+                                            <option value="-">- 选择 -</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">城市</label>
+                                        <input type="text" class="form-control" id="city">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">国家</label>
+                                        <select class="form-control" id="country">
+                                            <option value="-">- 选择 -</option>
+                                            <option value="ITA">ITALY</option>
+                                            <option value="FRA">FRANCE</option>
+                                            <option value="SPA">SPAIN</option>
+                                            <option value="GER">GERMANY</option>
+                                            <option value="USA">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">住址</label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">电话</label>
+                                        <input type="text" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">传真</label>
+                                        <input type="text" class="form-control" id="fax">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label class="option button">
+                                        <input type="checkbox" id="remember" name="remember" value="remember">	<span class="button-checkbox"></span>
+                                    </label>
+                                    <label>我已阅读<a href="#">注册条件</a>.</label>
+                                </div>
+                            </div>
+                            <div class="form-group margin-top">
+                                <button type="button" class="mpf_btn btn-lg btn-primary">注 册</button>
+                                <hr>
+                                <p><span class="red">*</span> - 必填.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

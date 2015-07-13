@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="多用途表单插件 - CSS3">
+    <meta name="author" content="RikyBlue">
+    <title>Forget</title>
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="alternate stylesheet" href="./css/red.css" title="red" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/green.css" title="green" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/purple.css" title="purple" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/orange.css" title="orange">
+    <!-- DEMO STYLE - NOT REQUIRED -->
+    <link type="text/css" rel="stylesheet" href="./css/demo.css">
+    <!-- COLOR SWITCHER -->
+    <script type="text/javascript" src="./js/styleswitcher.js"></script>
+</head>
+
+<body>
+    <div class="mpf_wrapper container">
+        <!-- RESET PASSWORD FORM -->
+        <div class="row">
+            <div class="col-md-12 text-center margin-top">	<a class="mpf_btn btn-primary btn-blue" href="" onclick="setActiveStyleSheet(&#39;blue&#39;); return false;">蓝色</a>
+                <a class="mpf_btn btn-primary btn-red" href="" onclick="setActiveStyleSheet(&#39;red&#39;); return false;">红色</a>
+                <a class="mpf_btn btn-primary btn-green" href="" onclick="setActiveStyleSheet(&#39;green&#39;); return false;">绿色</a>
+                <a class="mpf_btn btn-primary btn-purple" href="" onclick="setActiveStyleSheet(&#39;purple&#39;); return false;">紫色</a>
+                <a class="mpf_btn btn-primary btn-orange" href="" onclick="setActiveStyleSheet(&#39;orange&#39;); return false;">橙色</a>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-form">
+                    <div class="panel-heading">
+                        <h2 class="title">找回密码</h2>
+                        <p>重置您的密码.</p>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="control-label"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Insert your email address...">
+                            </div>
+                            <div class="form-group margin-top">
+                                <button type="button" class="mpf_btn btn-lg btn-primary">发送邮件</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

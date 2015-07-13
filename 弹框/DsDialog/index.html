@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DsDialog 一款超全功能的漂亮jQuery对话框插件 - js代码网 www.jsdaima.com</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/dsdialog.js"></script>
+<style>
+	#demo{text-align:center;margin:100px auto;}
+	#demo p{margin:20px auto;}
+	#demo button{padding:10px 30px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div id="demo">
+	<p><button id="demo1">标准调用</button></p>
+    <p><button id="demo2">自定义图标</button></p>
+    <p><button id="demo3">显示按钮</button></p>
+    <p><button id="demo4">自定义按钮文字</button></p>
+    <p><button id="demo5">支持回调事件</button></p>
+    <p><button id="demo6">模拟alert弹出层</button></p>
+    <p><button id="demo7">模拟confirm对话框</button></p>
+    <p><button id="demo8">模拟prompt对话框</button></p>
+    <p><button id="demo9">Tips方法调用</button></p>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$("#demo1").click(function(){
+		ds.dialog({
+		   title : '消息提示',
+		   content : '你好，欢迎访问js代码网！',
+		   timeout:2	  
+		});
+	});
+	
+	$("#demo2").click(function(){
+		ds.dialog({
+		   title : '消息提示',
+		   content : '你好，欢迎访问js代码网！',
+		   icon : "success.png",
+		});
+	});
+	
+	$("#demo3").click(function(){
+		ds.dialog({
+		   title : '消息提示',
+		   content : '输入的数量不正确！',
+		   onyes:true,
+		   icon : "info.png",
+		});
+	});
+	
+	$("#demo4").click(function(){
+		ds.dialog({
+		   title : '消息提示',
+		   content : '输入的数量不正确！',
+		   yesText : '在线支付',
+		   onyes:true,
+		   noText:'分单结算',
+		   onno:true,
+		   icon:"question.gif",
+		});
+	});
+	
+	$("#demo5").click(function(){
+		ds.dialog({
+		   title : '消息提示',
+		   content : '输入的数量不正确！',
+		   yesText : '确定',
+		   onyes:function(){
+			   alert("你点击了确定！");
+			   return false;
+		   },
+		   noText : '取消',
+		   onno : function(){
+			   alert("你点击了取消！");
+			   this.close();
+		   },
+		   icon : "question.gif",
+		});
+	});
+	
+	$("#demo6").click(function(){
+		ds.dialog.alert("模拟alert弹出层",function(){alert("js代码网 - www.jsdaima.com")},"info.png");
+	});
+	
+	$("#demo7").click(function(){
+		ds.dialog.confirm("是否回到js代码网首页",function(){window.location.href='http://www.jsdaima.com'},function(){alert("逗比，为什么不回到首页？")});
+	});
+	
+	$("#demo8").click(function(){
+		ds.dialog.prompt("请输入js代码网网址！",function(){alert("js代码网 - www.jsdaima.com")},"www.jsdaima.com");
+	});
+	
+	$("#demo9").click(function(){
+		ds.dialog.tips("js代码网 - www.jsdaima.com",2,true,true);
+	});
+});	
+</script>
+</html>
+<!-- 本代码由js代码网（http://www.jsdaima.com）收集并编辑整理 -->

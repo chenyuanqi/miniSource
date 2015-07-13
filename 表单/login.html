@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="多用途表单插件 - CSS3">
+    <meta name="author" content="RikyBlue">
+    <title>Login</title>
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="alternate stylesheet" href="./css/red.css" title="red" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/green.css" title="green" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/purple.css" title="purple" disabled="">
+    <link type="text/css" rel="alternate stylesheet" href="./css/orange.css" title="orange">
+    <!-- DEMO STYLE - NOT REQUIRED -->
+    <link type="text/css" rel="stylesheet" href="./css/demo.css">
+    <!-- COLOR SWITCHER -->
+    <script type="text/javascript" src="./js/styleswitcher.js"></script>
+</head>
+
+<body>
+    <div class="mpf_wrapper container">
+        <!-- LOGIN FORM -->
+        <div class="row">
+            <div class="col-md-12 text-center margin-top">	<a class="mpf_btn btn-primary btn-blue" href="" onclick="setActiveStyleSheet(&#39;blue&#39;); return false;">蓝色</a>
+                <a class="mpf_btn btn-primary btn-red" href="" onclick="setActiveStyleSheet(&#39;red&#39;); return false;">红色</a>
+                <a class="mpf_btn btn-primary btn-green" href="" onclick="setActiveStyleSheet(&#39;green&#39;); return false;">绿色</a>
+                <a class="mpf_btn btn-primary btn-purple" href="" onclick="setActiveStyleSheet(&#39;purple&#39;); return false;">紫色</a>
+                <a class="mpf_btn btn-primary btn-orange" href="" onclick="setActiveStyleSheet(&#39;orange&#39;); return false;">橙色</a>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-form">
+                    <div class="panel-heading">
+                        <h2 class="title">登陆</h2>
+                        <p>还没有账号？ <a href="">注册</a>.</p>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="control-label"><i class="fa fa-user"></i> 用户名 / Email</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label"><i class="fa fa-lock"></i> 密码</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label class="option button">
+                                        <input type="checkbox" id="remember" name="remember" value="remember">	<span class="button-checkbox"></span>
+                                    </label>
+                                    <label>记住我</label>
+                                </div>
+                            </div>
+                            <div class="form-group margin-top">
+                                <button type="button" class="mpf_btn btn-lg btn-primary">登 陆</button>
+                                <hr>
+                                <p>忘记密码？ <a href="">点击这里.</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

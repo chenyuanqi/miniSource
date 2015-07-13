@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="多用途表单插件 - CSS3">
+    <meta name="author" content="RikyBlue">
+    <title>Form</title>
+    <!-- STYLES -->
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="alternate stylesheet" href="./css/red.css" title="red">
+    <link type="text/css" rel="alternate stylesheet" href="./css/green.css" title="green">
+    <link type="text/css" rel="alternate stylesheet" href="./css/purple.css" title="purple">
+    <link type="text/css" rel="alternate stylesheet" href="./css/orange.css" title="orange">
+    <!-- DEMO STYLE - NOT REQUIRED -->
+    <link type="text/css" rel="stylesheet" href="./css/demo.css">
+    <!-- COLOR SWITCHER -->
+    <script type="text/javascript" src="./js/styleswitcher.js"></script>
+</head>
+
+<body>
+    <div class="mpf_wrapper container">
+        <!-- MULTI-PURPOSE FORM -->
+        <div class="row">
+            <div class="col-md-12 text-center margin-top">	<a class="mpf_btn btn-primary btn-blue" href="" onclick="setActiveStyleSheet(&#39;blue&#39;); return false;">蓝色</a>
+                <a class="mpf_btn btn-primary btn-red" href="" onclick="setActiveStyleSheet(&#39;red&#39;); return false;">红色</a>
+                <a class="mpf_btn btn-primary btn-green" href="" onclick="setActiveStyleSheet(&#39;green&#39;); return false;">绿色</a>
+                <a class="mpf_btn btn-primary btn-purple" href="" onclick="setActiveStyleSheet(&#39;purple&#39;); return false;">紫色</a>
+                <a class="mpf_btn btn-primary btn-orange" href="" onclick="setActiveStyleSheet(&#39;orange&#39;); return false;">橙色</a>
+            </div>
+            <div class="col-md-12">
+                <div class="panel panel-form">
+                    <div class="panel-heading">
+                        <h2 class="title">多用途</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>必填字段 </h3>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="control-label">Text Field</label>
+                                    <input type="text" class="form-control" id="text-field">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Password Field</label>
+                                    <input type="password" class="form-control" id="password-field">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Success Field</label>
+                                    <input type="text" class="form-control success" id="success-field">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Warning Field</label>
+                                    <input type="text" class="form-control warning" id="warning-field">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Error Field</label>
+                                    <input type="text" class="form-control error" id="error-field">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Select</label>
+                                    <select class="form-control">
+                                        <option value="-">- Select -</option>
+                                        <option value="option-1">Option 1</option>
+                                        <option value="option-2">Option 2</option>
+                                        <option value="option-3">Option 3</option>
+                                        <option value="option-4">Option 4</option>
+                                        <option value="option-5">Option 5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Multiple Select</label>
+                                    <select class="form-control multiple" multiple="multiple" size="5">
+                                        <option value="-">- Select -</option>
+                                        <option value="option-1">Option 1</option>
+                                        <option value="option-2">Option 2</option>
+                                        <option value="option-3">Option 3</option>
+                                        <option value="option-4">Option 4</option>
+                                        <option value="option-5">Option 5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Text Area - Small</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Text Area - Medium</label>
+                                    <textarea class="form-control" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Text Area - Large</label>
+                                    <textarea class="form-control" rows="15"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Checkbox and Radio</h3>
+                                <hr>
+                                <div class="form-group">
+                                    <label class="control-label">Radio Button</label>
+                                    <div class="radio">
+                                        <label class="option button">
+                                            <input type="radio" name="radio" value="option-1" checked="checked">	<span class="button-radio"></span>
+                                        </label>
+                                        <label>Option 1</label>
+                                        <label class="option button">
+                                            <input type="radio" name="radio" value="option-2">	<span class="button-radio"></span>
+                                        </label>
+                                        <label>Option 2</label>
+                                        <label class="option button">
+                                            <input type="radio" name="radio" value="option-3">	<span class="button-radio"></span>
+                                        </label>
+                                        <label>Option 3</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Checkbox</label>
+                                    <div class="checkbox">
+                                        <label class="option button">
+                                            <input type="checkbox" name="checkbox" value="option-1" checked="checked">	<span class="button-checkbox"></span>
+                                        </label>
+                                        <label>Option 1</label>
+                                        <label class="option button">
+                                            <input type="checkbox" name="checkbox" value="option-2">	<span class="button-checkbox"></span>
+                                        </label>
+                                        <label>Option 2</label>
+                                        <label class="option button">
+                                            <input type="checkbox" name="checkbox" value="option-3">	<span class="button-checkbox"></span>
+                                        </label>
+                                        <label>Option 3</label>
+                                    </div>
+                                </div>
+                                <h3>Buttons</h3>
+                                <hr>
+                                <button type="button" class="mpf_btn btn-lg btn-primary btn-blue btn-block">BUTTON</button>
+                                <button type="button" class="mpf_btn btn-lg btn-primary btn-red btn-block">BUTTON</button>
+                                <button type="button" class="mpf_btn btn-lg btn-primary btn-green btn-block">BUTTON</button>
+                                <button type="button" class="mpf_btn btn-lg btn-primary btn-purple btn-block">BUTTON</button>
+                                <button type="button" class="mpf_btn btn-lg btn-primary btn-orange btn-block">BUTTON</button>
+                                <fieldset>
+                                    <h3>Alerts</h3>
+                                    <hr>
+                                    <div class="alert alert-success alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">	<span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>	<strong>Success!</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+                                    <div class="alert alert-info alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">	<span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>	<strong>Information!</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+                                    <div class="alert alert-warning alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">	<span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>	<strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+                                    <div class="alert alert-danger alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">	<span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+                                    <div class="alert alert-special alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">	<span aria-hidden="true">×</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>	<strong>Wow!</strong> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

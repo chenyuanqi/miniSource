@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script src="scripts/libs/modernizr/modernizr.js" type="text/javascript"></script>
+    <script src="scripts/config.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header fixed zindex10">
+        <nav class="w1000 mc fw">
+            <ul class="r lh30">
+                <li class="di"><a href="#" class="wh a_yellow1 f14">登录</a>
+                </li>
+                <li class="di"><a href="user_register.html" class="wh a_yellow1 f14">注册</a>
+                </li>
+            </ul>
+            <dl>
+                <dd class="di"><a href="#" class="wh a_nav b dib">首页</a>
+                </dd>
+                <dd class="di"><a href="#" class="wh a_nav b dib">列表页</a>
+                </dd>
+                <dd class="di"><a href="#" class="wh a_nav b dib">详情页</a>
+                </dd>
+            </dl>
+        </nav>
+    </header>
+    <section class="w1000 mc split_header">
+        <header class="nav_title fw f20"><font class="ficomoon icon-signup mr5 vb"></font>注册新用户</header>
+        <div class="register">
+            <dl>	<dt class="min_fix w310"><span class="f12 remaining_word pt5">还能输入<font id="txtEmailDigit">40</font>个字</span><label for="txtEmail"><font class="ficomoon icon-send mr5"></font>邮箱</label></dt>
+                <dd>
+                    <input type="text" class="input_txt_h25 w300 f14" id="txtEmail" />
+                </dd>
+                <dd class="f12 lh30 mb20 gray1"><span id="errorEmail" title="邮箱由字母、数字或下划线组成">邮箱由字母、数字或下划线组成</span>
+                </dd>	<dt class="min_fix w310"><span class="f12 remaining_word pt5">还能输入<font id="txtPwdDigit">20</font>个字</span><label for="txtPwd"><font class="ficomoon icon-lock mr5"></font>密码</label></dt>
+                <dd>
+                    <input type="password" class="input_txt_h25 w300 f14" id="txtPwd" name="pwd" />
+                </dd>
+                <dd class="pwd_complex f12"><span></span><span></span><span></span><font></font>
+                </dd>
+                <dd class="f12 gray1 lh30 mb20"><span id="errorPwd" title="密码为6-20个字符，可由英文、数字及符号组成，不能包含空格">密码为6-20个字符，可由英文、数字及符号组成，不能包含空格</span>
+                </dd>	<dt class="min_fix w310"><span class="f12 remaining_word pt5">还能输入<font id="txtRePwdDigit">20</font>个字</span><label for="txtRePwd"><font class="ficomoon icon-key mr5"></font>确认密码</label></dt>
+                <dd>
+                    <input type="password" class="input_txt_h25 w300 f14" id="txtRePwd" name="pwd" />
+                </dd>
+                <dd class="f12 gray1 lh30 mb20"><span id="errorRePwd" title="请再次输入密码">请再次输入密码</span>
+                </dd>
+                <dd class="f12 mb10">
+                    <input type="checkbox" id="cbProtocol" checked="true" class="input_align" />我已阅读并同意<a href="javascript:void(0)" id="btnProtocol" class="a_green1 black1">服务条款</a>
+                </dd>
+                <dd><a href="javascript:void(0)" id="btnRegister" class="btn_green1 w310 lh40 f20">马上注册</a>
+                    <p id="perror" class="error lh30 f14">&nbsp;</p>
+                </dd>
+            </dl>
+        </div>
+    </section>
+    <script src="scripts/libs/require/require.js" type="text/javascript" data-main="scripts/app/user_register/main"></script>
+</body>
+
+</html>
