@@ -23,7 +23,7 @@ return  array(
             '[!JS]'        => __ROOT__.'/Public/style/js/',
             '[!IMG]'       => __ROOT__.'/Public/images/',
             '[!FONT]'       => __ROOT__.'/Public/style/font/',
-            '[!LIB]'       => __ROOT__.'\/Library\/'
+            '[!LIB]'       => __ROOT__.'/Library/'
         ),
 
     /* 应用设定 */

@@ -7,7 +7,7 @@ use Think\Controller;
 
 class CategoryController extends CommonController {
     /**
-     * 鍒嗙被鍒楄〃
+     * 分类列表
      * @author cyq <chenyuanqi90s@163.com>
      */
     public function cateList(){

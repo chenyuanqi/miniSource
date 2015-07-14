@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 
 <head>
@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <!--[if lt IE 9]>
-<script type="text/javascript" src="[!JS]html5.js"></script>
-<script type="text/javascript" src="[!JS]respond.min.js"></script>
-<script type="text/javascript" src="[!JS]PIE_IE678.js"></script>
+<script type="text/javascript" src="/miniCMS/Public/style/js/html5.js"></script>
+<script type="text/javascript" src="/miniCMS/Public/style/js/respond.min.js"></script>
+<script type="text/javascript" src="/miniCMS/Public/style/js/PIE_IE678.js"></script>
 <![endif]-->
-    <link type="text/css" rel="stylesheet" href="[!CSS]H-ui.css" />
-    <link type="text/css" rel="stylesheet" href="[!CSS]H-ui.admin.css" />
-    <link type="text/css" rel="stylesheet" href="[!FONT]font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/miniCMS/Public/style/css/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/miniCMS/Public/style/css/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/miniCMS/Public/style/font/font-awesome.min.css" />
     <!--[if IE 7]>
-<link href="[!FONT]font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
+<link href="/miniCMS/Public/style/font/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
 <![endif]-->
     <title>主页</title>
 </head>
@@ -191,7 +191,7 @@
             <br>Copyright &copy;2015 H-ui.admin v2.1.1 All Rights Reserved.
             <br>本后台系统由<a href="http://www.17sucai.com/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
     </footer>
-    <script type="text/javascript" src="[!JS]jquery.min.js"></script>
+    <script type="text/javascript" src="/miniCMS/Public/style/js/jquery.min.js"></script>
 </body>
 
 </html>

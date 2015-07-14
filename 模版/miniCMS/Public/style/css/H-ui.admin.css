@@ -33,7 +33,7 @@ body{min-height:100%;position: relative}
 .Hui-logo-m{display:none;width:45px;margin-left:10px;}
 .Hui-subtitle{ font-size:12px; color:#eee; padding-top:15px}
 .viewhome{ line-height:44px; padding-right:15px}
-.viewhome a{ color:#FFF; padding-left:20px; background:url(../images/icon_link.png) no-repeat 0 center}
+.viewhome a{ color:#FFF; padding-left:20px; background:url(../../images/icon_link.png) no-repeat 0 center}
 /*导航*/
 .Hui-nav{ padding-left:40px}
 .Hui-nav li,.Hui-nav li a{display:block; height:44px; line-height:44px}
@@ -42,14 +42,14 @@ body{min-height:100%;position: relative}
 .Hui-nav li a:hover{text-decoration:none}
 
 .Hui-userbox{ position:absolute; top:8px; right:20px}
-.Hui-nav-toggle{ display:none; position:absolute; top:0px; right:10px; width:44px; height:44px; background:#333 url(../images/hamburger.gif) no-repeat center}
+.Hui-nav-toggle{ display:none; position:absolute; top:0px; right:10px; width:44px; height:44px; background:#333 url(../../images/hamburger.gif) no-repeat center}
 
 .Hui-main{bottom: 0;left: 0;position: absolute; z-index:1;right: 0;top:45px;transition-duration: 0.4s;transition-property: top}
 /*左侧菜单*/
 .Hui-aside{position: absolute;top: 0;bottom: 0;left: 0; padding-top:10px;width:199px; height:100%;z-index:999; overflow-y:auto}
 .menu_dropdown dl{ margin-bottom:0}
 .menu_dropdown dl dt{display:block;font-weight: bold;height:35px;line-height:35px;padding-left:15px;cursor:pointer;position:relative}
-.menu_dropdown dl dt b{ position:absolute;display: block;background: url(../images/icon_jt2.png) no-repeat 0 -6px;font-size: 0;height:5px;right:15px;line-height:0;overflow: hidden;top:50%;width: 9px; margin-top:-3px;transition-duration:0.3s ;transition-property:all}
+.menu_dropdown dl dt b{ position:absolute;display: block;background: url(../../images/icon_jt2.png) no-repeat 0 -6px;font-size: 0;height:5px;right:15px;line-height:0;overflow: hidden;top:50%;width: 9px; margin-top:-3px;transition-duration:0.3s ;transition-property:all}
 
 .Hui_icon{position:absolute;display: block;ont-size: 0;height:5px;right:15px;line-height:0;overflow: hidden;top:50%;width: 9px; margin-top:-3px}
 .selected .Hui_icon{background-position:0 0}
@@ -67,17 +67,17 @@ body{min-height:100%;position: relative}
 .menu_dropdown li a:hover{text-decoration:none}
 
 .dislpayArrow{position: absolute;top: 0;bottom: 0;left:200px;width:0px; height:100%;z-index:10}
-.dislpayArrow a{ position:absolute; display:block; width:17px; height:61px;top:50%; margin-top:-30px; background:url(../images/icon_arrow.png) no-repeat 0 0; outline:none}
+.dislpayArrow a{ position:absolute; display:block; width:17px; height:61px;top:50%; margin-top:-30px; background:url(../../images/icon_arrow.png) no-repeat 0 0; outline:none}
 .dislpayArrow a.open{ background-position:0 -61px}
 .dislpayArrow a:hover{ text-decoration:none; background-position:right 0}
 .dislpayArrow a.open:hover{background-position:right -61px}
 /*主要操作区*/
 .Hui-article{position: absolute; z-index:2;top:0;right:0;bottom:0;left:200px}
 /*选项卡导航*/
-.Hui-tabNav{height: 40px; padding-right:75px;background: #a2bed5 url(../images/acrossTab-bg.png) repeat-x 0 bottom;overflow:hidden; position:relative}
+.Hui-tabNav{height: 40px; padding-right:75px;background: #a2bed5 url(../../images/acrossTab-bg.png) repeat-x 0 bottom;overflow:hidden; position:relative}
 .Hui-tabNav-wp{position:relative; height:40px;overflow:hidden;}
 .Hui-tabNav .acrossTab{ position:absolute; top:10px; left:0px}
-.loading {background:url(../images/loading_072.gif) no-repeat center; height:100px}
+.loading {background:url(../../images/loading_072.gif) no-repeat center; height:100px}
 .show_iframe iframe {position: absolute;bottom: 0;height: 100%;width: 100%}
 .Hui-tabNav-more {position: absolute;right:0px;width:70px;top:8px;display: none;}
 

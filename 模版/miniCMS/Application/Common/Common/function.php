@@ -473,3 +473,16 @@ function P($module = 0, $else = null) {
     }
 }
 
+
+/**
+ * 校验验证码
+ * @param  length   $length       生成的字符串长度
+ * @param  pool     $pool         需求池
+ * @return string   #随机后的字符串
+ * @author cyq <chenyuanqi90s@163.com>
+ */
+function check_code($code, $id = null) {
+    $verify = new \Think\Verify();
+    return $verify -> check($code, $id);
+}
+

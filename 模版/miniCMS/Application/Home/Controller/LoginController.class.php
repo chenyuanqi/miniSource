@@ -11,20 +11,6 @@ class LoginController extends CommonController {
      * @author cyq <chenyuanqi90s@163.com>
      */
     public function login() {
-        // 快捷访问
-        if (cookie('user') && cookie('password')) {
-            $account_map = array(
-                'account' => cookie('user'),
-                'password'=> encryptDecrypt(cookie('password'), 'cyq2015')
-            );
-            $account = M("account")->where($account_map)->find();
-            if ($account) {
-                cookie("aid", $account['id']);
-                cookie("name", $account['account']);
-                cookie("isLogin", 1);
-                $this->redirect('Index/index');
-            }
-        }
   
         $this->display();
     }
@@ -37,6 +23,11 @@ class LoginController extends CommonController {
     public function loginAction() {
         //验证用户登录 # encryptDecrypt('123456', 'cyq2015') => 9UklK9vps3Bv3JHguCaFp7jXhUcrlZeCaMjWGcXj69M=
         if (IS_POST) {
+            // 验证验证码是否正确
+            if (!check_code(I('post.code'))) {
+                $this->error('提示：验证码有误(请输入 0 ~ 9 的数字)');
+            }
+
             $account_map = array(
                 'account' => I('post.user'),
                 'password'=> encryptDecrypt(I('post.pwd'), 'cyq2015')
@@ -68,5 +59,26 @@ class LoginController extends CommonController {
         cookie(null);
 
         1 != cookie("isLogin") && $this->redirect('Index/index');
+    }
+
+
+    /**
+     * 验证码生成
+     * @author cyq <chenyuanqi90s@163.com>
+     */
+    public function verify() {
+        $config =    array(    
+            'fontSize'    =>    17,    // 验证码字体大小    
+            'length'      =>    6,     // 验证码位数    
+            'useNoise'    =>    false, // 关闭验证码杂点
+        );
+        $Verify =     new \Think\Verify($config);
+        // 开启验证码背景图片功能 随机使用 ThinkPHP/Library/Think/Verify/bgs 目录下面的图片
+        $Verify->useImgBg = true;
+        // 设置验证码字符
+        $Verify->codeSet = 'abcdefghkmnpqrstuvwxyz';
+
+        $Verify->entry();
+
     }
 }
