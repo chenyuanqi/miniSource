@@ -30,7 +30,7 @@ class UserModel extends Model {
 
     /**
      * 用户编辑
-     * @param  *addData (Array)  编辑的数组数据
+     * @param  *editData (Array)  编辑的数组数据
      * @author cyq <chenyuanqi90s@163.com>
      **/
     protected function editUser($editData) {
@@ -64,8 +64,7 @@ class UserModel extends Model {
 
      /**
      * 用户头像上传
-     * @param  *id (Int)  要查询的记录 ID
-     * @param  field (String) 要获取的用户字段
+     * @param  *fileName (String)  文件表单中的名称
      * @author cyq <chenyuanqi90s@163.com>
      **/
     protected function uploadHeadImg($fileName) {
@@ -94,6 +93,7 @@ class UserModel extends Model {
 
     /**
      * 判断是否报错/返回路径
+     * @param  path (String)  要判断的字符串
      * @author cyq <chenyuanqi90s@163.com>
      **/
     protected function isPath($path) {
