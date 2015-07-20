@@ -6,7 +6,7 @@ namespace Home\Model;
 use Think\Model;
 
 class UserModel extends Model {   
-    protected $_validate = array(
+    public $_validate = array(
             array("phone","require","请输入手机号码",1,"",1),//验证手机号是否填写
             array("phone","/^(1[3|5|8])[\d]{9}$/","手机号码不正确",2,"regex",1),//验证手机号码是否正确
             array("phone","","手机号码已经被注册",1,"unique",1),// 验证手机号码是否被注册
@@ -22,7 +22,7 @@ class UserModel extends Model {
      * @param  *addData (Array)  添加的数组数据
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function addUser($addData) {
+    public function addUser($addData) {
         $result = M('User')->add($addData);
         return $result;
     }
@@ -33,7 +33,7 @@ class UserModel extends Model {
      * @param  *editData (Array)  编辑的数组数据
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function editUser($editData) {
+    public function editUser($editData) {
         $result = M('User')->save($editData);
         return $result;
     }
@@ -44,7 +44,7 @@ class UserModel extends Model {
      * @param  *id (Int/String)  要删除的记录 ID / id 以英文逗号 (,) 拼接的数组 =>删除多条记录
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function delUser($id) {
+    public function delUser($id) {
         $result = M('User')->delete($id);
         return $result;
     }
@@ -56,7 +56,7 @@ class UserModel extends Model {
      * @param  field (String) 要获取的用户字段
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function getUserInfo($id, $field = null) {
+    public function getUserInfo($id, $field = null) {
         $result = M('User')->find($id);
         return is_null($field) ? $result : $result[$field];
     }
@@ -67,7 +67,7 @@ class UserModel extends Model {
      * @param  *fileName (String)  文件表单中的名称
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function uploadHeadImg($fileName) {
+    public function uploadHeadImg($fileName) {
         if (!empty($_FILES) && 0 === $_FILES[$fileName]["error"]) {
             $uploadObj = new \Think\Upload();// 实例化上传类    
             $uploadObj->maxSize   =     $maxSize;// 设置附件上传大小    
@@ -96,7 +96,7 @@ class UserModel extends Model {
      * @param  path (String)  要判断的字符串
      * @author cyq <chenyuanqi90s@163.com>
      **/
-    protected function isPath($path) {
+    public function isPath($path) {
         $result = strrpos($path, '/');
         return $result ? true : false;
     }
